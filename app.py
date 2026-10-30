@@ -556,7 +556,7 @@ def notify(msg):
         sent |= post_json(hook, {"content": msg[:1900],
                                  "allowed_mentions": {"parse": []}})
     tok = os.environ.get("9199015467:AAEL4vwMzFWNY4ODbg_LL2ibeOFwX5GTxgk", "")
-    chat = os.environ.get("9199015467", "")
+    chat = os.environ.get("8035342889", "")
     if tok and chat:
         sent |= post_json(f"https://api.telegram.org/bot{tok}/sendMessage",
                           {"chat_id": chat, "text": msg[:3500]})
